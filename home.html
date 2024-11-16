@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your New Friend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+        .boxheader3 {
+            display: flex;
+            align-items: center;
+        }
+        .boxheader3 a, .boxheader3 button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .boxheader3 a:hover, .boxheader3 button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .div1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        .gridmain {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            justify-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+        .product-card p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+        .product-card button {
+            padding: 10px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 80%;
+        }
+        .product-card button:hover {
+            background-color: #ffd700;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="gridheader">
+            <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+            <div class="boxheader2">
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="petcare.html">PET CARE</a> 
+            </div>
+            <div class="boxheader3">
+                <a id="registerButton" href="index.html">REGISTER / SIGN IN</a>
+                <button id="logoutButton" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="div1">CHOOSE YOUR NEW FRIEND</div>
+        <div class="gridmain">
+            <div class="product-card">
+                <img src="doglogo.jpg" alt="Dog Logo">
+                <h3>Dogs</h3>
+                <p>Man's best friend awaits! Choose your new dog today.</p>
+                <a href="dogadoption.html"><button>Choose Dog</button></a>
+            </div>
+            <div class="product-card">
+                <img src="catlogo.jpg" alt="Cat Logo">
+                <h3>Cats</h3>
+                <p>Find your perfect feline companion!</p>
+                <a href="catadoption.html"><button>Choose Cat</button></a>
+            </div>
+            <div class="product-card">
+                <img src="rabbitlogo.jpg" alt="Rabbit Logo">
+                <h3>Rabbits</h3>
+                <p>Hop into joy with a cute rabbit!</p>
+                <a href="rabbitadoption.html"><button>Choose Rabbit</button></a>
+            </div>
+            <div class="product-card">
+                <img src="mouselogo.jpg" alt="Mouse Logo">
+                <h3>Mice</h3>
+                <p>Small but full of personality. Get a mouse now!</p>
+                <a href="mouseadoption.html"><button>Choose Mouse</button></a>
+            </div>
+            <div class="product-card">
+                <img src="parrotlogo.jpg" alt="Parrot Logo">
+                <h3>Parrots</h3>
+                <p>Colorful and smart, your new feathered friend!</p>
+                <a href="parrotadoption.html"><button>Choose Parrot</button></a>
+            </div>
+            <div class="product-card">
+                <img src="pigeonlogo.jpg" alt="Pigeon Logo">
+                <h3>Pigeons</h3>
+                <p>Looking for a loyal pigeon companion? They're here!</p>
+                <a href="pegionadoption.html"><button>Choose Pigeon</button></a>
+            </div>
+            <div class="product-card">
+                <img src="squirrellogo.jpg" alt="Squirrel Logo">
+                <h3>Squirrels</h3>
+                <p>Energetic and playful, get a squirrel today!</p>
+                <a href="squirreladoption.html"><button>Choose Squirrel</button></a>
+            </div>
+            <div class="product-card">
+                <img src="fishlogo.jpg" alt="Fish Logo">
+                <h3>Fish</h3>
+                <p>Bring some tranquility into your home with a beautiful fish.</p>
+                <a href="fishadoption.html"><button>Choose Fish</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Pet Shop. All rights reserved.</p>
+        <p>
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>

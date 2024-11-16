@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrot Adoption</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+
+        .boxheader3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .boxheader3 a, .boxheader3 button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boxheader3 a:hover, .boxheader3 button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+      
+        h1 {
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+        }
+
+       
+        .parrot-card-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        .parrot-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .parrot-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .parrot-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .parrot-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .parrot-card button {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .parrot-card button:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: lightgreen;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="gridheader">
+            <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+            <div class="boxheader2">
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="boxheader3">
+                <a id="registerButton" href="index.html">REGISTER / SIGN IN</a>
+                <button id="logoutButton" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <h1>Meet Our Parrots Available for Adoption</h1>
+
+    <div class="parrot-card-container">
+        
+        <div class="parrot-card">
+            <img src="pAfrican Grey.jpg" alt="Coco the Parrot">
+            <h3>Coco</h3>
+            <p>Species: African Grey</p>
+            <p>Age: 4 years</p>
+            <button onclick="alert('Contact us to adopt Coco!')">Adopt Coco</button>
+        </div>
+
+        <div class="parrot-card">
+            <img src=" Sun Conure.jpg" alt="Sunny the Parrot">
+            <h3>Sunny</h3>
+            <p>Species: Sun Conure</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Sunny!')">Adopt Sunny</button>
+        </div>
+
+        <div class="parrot-card">
+            <img src="Amazon Parrot.jpg" alt="Polly the Parrot">
+            <h3>Polly</h3>
+            <p>Species: Amazon Parrot</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Polly!')">Adopt Polly</button>
+        </div>
+
+        <div class="parrot-card">
+            <img src="Macaw.jpg" alt="Rio the Parrot">
+            <h3>Rio</h3>
+            <p>Species: Macaw</p>
+            <p>Age: 5 years</p>
+            <button onclick="alert('Contact us to adopt Rio!')">Adopt Rio</button>
+        </div>
+
+        <div class="parrot-card">
+            <img src="Cockatiel.jpg" alt="Kiwi the Parrot">
+            <h3>Kiwi</h3>
+            <p>Species: Cockatiel</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Kiwi!')">Adopt Kiwi</button>
+        </div>
+
+        <div class="parrot-card">
+            <img src="Budgerigar.jpg" alt="Blue the Parrot">
+            <h3>Blue</h3>
+            <p>Species: Budgerigar</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Blue!')">Adopt Blue</button>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Pet World. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

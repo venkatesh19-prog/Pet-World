@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care - Choose Your New Friend</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+
+        
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .gridmain, .grid-pet-care {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            justify-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+      
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #ffd700;
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="gridheader">
+            <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+            <div class="boxheader2">
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="petcare.html">PET CARE</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="section-title">Pet Care Tips</h2>
+            <div class="grid-pet-care">
+                <div class="card">
+                    <img src="doglogo.jpg" alt="Dog Care">
+                    <h3>Dog Care</h3>
+                    <p>Learn how to keep your dog happy and healthy with proper diet, exercise, and grooming.</p>
+                    <a href="dogcare.html"><button>Learn More</button></a>
+                </div>
+                <div class="card">
+                    <img src="catlogo.jpg" alt="Cat Care">
+                    <h3>Cat Care</h3>
+                    <p>Find essential tips for caring for your cat, from feeding to litter training and playtime.</p>
+                    <a href="catcare.html"><button>Learn More</button></a>
+                </div>
+                <div class="card">
+                    <img src="rabbitlogo.jpg" alt="Rabbit Care">
+                    <h3>Rabbit Care</h3>
+                    <p>Discover how to care for your rabbit, including diet, habitat, and socialization.</p>
+                    <a href="rabbitcare.html"><button>Learn More</button></a>
+                </div>
+                <div class="card">
+                    <img src="parrotlogo.jpg" alt="Bird Care">
+                    <h3>Bird Care</h3>
+                    <p>Get tips on bird care, including feeding, cage setup, and ensuring mental stimulation.</p>
+                    <a href="birdcare.html"><button>Learn More</button></a>
+                </div>
+                <div class="card">
+                    <img src="fishlogo.jpg" alt="Fish Care">
+                    <h3>Fish Care</h3>
+                    <p>Learn the essentials of fish care, such as tank maintenance, feeding, and water quality.</p>
+                    <a href="fishcare.html"><button>Learn More</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Pet Shop. All rights reserved.</p>
+        <p>
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>

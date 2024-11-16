@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigeon Adoption</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+
+        .boxheader3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .boxheader3 a, .boxheader3 button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boxheader3 a:hover, .boxheader3 button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+     
+        h1 {
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        .pigeon-card-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+       
+        .pigeon-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pigeon-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .pigeon-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .pigeon-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .pigeon-card button {
+            background-color: #708090;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .pigeon-card button:hover {
+            background-color: #5f7781;
+        }
+
+       
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #87ceeb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="gridheader">
+            <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+            <div class="boxheader2">
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="boxheader3">
+                <a id="registerButton" href="index.html">REGISTER / SIGN IN</a>
+                <button id="logoutButton" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+    <h1>Meet Our Pigeons Available for Adoption</h1>
+
+    
+    <div class="pigeon-card-container">
+        
+        <div class="pigeon-card">
+            <img src="Homing Pigeon.jpg" alt="Sky the Pigeon">
+            <h3>Sky</h3>
+            <p>Species: Homing Pigeon</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Sky!')">Adopt Sky</button>
+        </div>
+
+        <div class="pigeon-card">
+            <img src="rock Pigeon.jpg" alt="Cloud the Pigeon">
+            <h3>Cloud</h3>
+            <p>Species: Rock Pigeon</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Cloud!')">Adopt Cloud</button>
+        </div>
+
+        <div class="pigeon-card">
+            <img src="king Pigeon.jpg" alt="Pearl the Pigeon">
+            <h3>Pearl</h3>
+            <p>Species: King Pigeon</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Pearl!')">Adopt Pearl</button>
+        </div>
+
+        <div class="pigeon-card">
+            <img src="FantailPigeon.jpg" alt="Blue the Pigeon">
+            <h3>Blue</h3>
+            <p>Species: Fantail Pigeon</p>
+            <p>Age: 1.5 years</p>
+            <button onclick="alert('Contact us to adopt Blue!')">Adopt Blue</button>
+        </div>
+
+        <div class="pigeon-card">
+            <img src="Racing Homer.jpg" alt="Snow the Pigeon">
+            <h3>Snow</h3>
+            <p>Species: Racing Homer</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Snow!')">Adopt Snow</button>
+        </div>
+
+        <div class="pigeon-card">
+            <img src="Roller Pigeon.jpg" alt="Whisper the Pigeon">
+            <h3>Whisper</h3>
+            <p>Species: Roller Pigeon</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Whisper!')">Adopt Whisper</button>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Pet World. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

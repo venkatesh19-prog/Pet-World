@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squirrel Adoption</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+
+        .boxheader3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .boxheader3 a, .boxheader3 button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boxheader3 a:hover, .boxheader3 button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+       
+        h1 {
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        
+        .squirrel-card-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+      
+        .squirrel-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .squirrel-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .squirrel-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .squirrel-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .squirrel-card button {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .squirrel-card button:hover {
+            background-color: #6f3710;
+        }
+
+        
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #D2B48C;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="gridheader">
+            <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+            <div class="boxheader2">
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="boxheader3">
+                <a id="registerButton" href="index.html">REGISTER / SIGN IN</a>
+                <button id="logoutButton" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <h1>Meet Our Squirrels Available for Adoption</h1>
+
+    <div class="squirrel-card-container">
+        
+        <div class="squirrel-card">
+            <img src="Eastern Gray Squirrel.jpg" alt="Acorn the Squirrel">
+            <h3>Acorn</h3>
+            <p>Species: Eastern Gray Squirrel</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Acorn!')">Adopt Acorn</button>
+        </div>
+
+        <div class="squirrel-card">
+            <img src="Red Squirrel.jpg" alt="Hazel the Squirrel">
+            <h3>Hazel</h3>
+            <p>Species: Red Squirrel</p>
+            <p>Age: 1.5 years</p>
+            <button onclick="alert('Contact us to adopt Hazel!')">Adopt Hazel</button>
+        </div>
+
+        <div class="squirrel-card">
+            <img src="Fox Squirrel.jpg" alt="Nutsy the Squirrel">
+            <h3>Nutsy</h3>
+            <p>Species: Fox Squirrel</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Nutsy!')">Adopt Nutsy</button>
+        </div>
+
+        <div class="squirrel-card">
+            <img src=" Western Gray Squirrel.jpg" alt="Chippy the Squirrel">
+            <h3>Chippy</h3>
+            <p>Species: Western Gray Squirrel</p>
+            <p>Age: 2.5 years</p>
+            <button onclick="alert('Contact us to adopt Chippy!')">Adopt Chippy</button>
+        </div>
+
+        <div class="squirrel-card">
+            <img src="American Red Squirrel.jpg" alt="Willow the Squirrel">
+            <h3>Willow</h3>
+            <p>Species: American Red Squirrel</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Willow!')">Adopt Willow</button>
+        </div>
+
+        <div class="squirrel-card">
+            <img src="Black Squirrel.jpg" alt="Pepper the Squirrel">
+            <h3>Pepper</h3>
+            <p>Species: Black Squirrel</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Pepper!')">Adopt Pepper</button>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2024 Pet World. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

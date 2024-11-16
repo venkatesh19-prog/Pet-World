@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .gridheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 10px 20px;
+        }
+        .boxheader1 img {
+            height: 7vh;
+            border-radius: 50%;
+        }
+
+        .boxheader2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .boxheader2 a:hover {
+            text-decoration: underline;
+        }
+
+        .boxheader3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .boxheader3 a, .boxheader3 button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boxheader3 a:hover, .boxheader3 button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .dog-card-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dog-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .dog-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .dog-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .dog-card button {
+            background-color: goldenrod;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .dog-card button:hover {
+            background-color: #e5b700;
+        }
+
+      
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="gridheader">
+        <div class="boxheader1"><img src="logo.jpg" alt="Website Logo"></div>
+        <div class="boxheader2">
+            <a href="home.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="boxheader3">
+            <a id="registerButton" href="index.html">REGISTER / SIGN IN</a>
+            <button id="logoutButton" style="display: none;">Logout</button>
+        </div>
+    </div>
+</header>
+    <h1>Meet Our Dogs Available for Adoption</h1>
+    <div class="dog-card-container">
+        <div class="dog-card">
+            <img src="Labrador Retriever.jpg" alt="Bella the Dog">
+            <h3>Bella</h3>
+            <p>Breed: Labrador Retriever</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Bella!')">Adopt Bella</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="german shepard.jpg" alt="Max the Dog">
+            <h3>Max</h3>
+            <p>Breed: German Shepherd</p>
+            <p>Age: 4 years</p>
+            <button onclick="alert('Contact us to adopt Max!')">Adopt Max</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="beagle-dog.jpg" alt="Luna the Dog">
+            <h3>Luna</h3>
+            <p>Breed: Beagle</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Luna!')">Adopt Luna</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="boxerdog.jpg" alt="Rocky the Dog">
+            <h3>Rocky</h3>
+            <p>Breed: Boxer</p>
+            <p>Age: 5 years</p>
+            <button onclick="alert('Contact us to adopt Rocky!')">Adopt Rocky</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="goldenretriver.jpg" alt="Charlie the Dog">
+            <h3>Charlie</h3>
+            <p>Breed: Golden Retriever</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Charlie!')">Adopt Charlie</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="poddledog.jpg" alt="Daisy the Dog">
+            <h3>Daisy</h3>
+            <p>Breed: Poodle</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Daisy!')">Adopt Daisy</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="siberian husky.jpg" alt="Buddy the Dog">
+            <h3>Buddy</h3>
+            <p>Breed: Siberian Husky</p>
+            <p>Age: 4 years</p>
+            <button onclick="alert('Contact us to adopt Buddy!')">Adopt Buddy</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="bulldog.jpg" alt="Molly the Dog">
+            <h3>Molly</h3>
+            <p>Breed: Bulldog</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Molly!')">Adopt Molly</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="rottweiler.jpg" alt="Rex the Dog">
+            <h3>Rex</h3>
+            <p>Breed: Rottweiler</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Rex!')">Adopt Rex</button>
+        </div>
+
+        <div class="dog-card">
+            <img src="dalmission.webp" alt="Sadie the Dog">
+            <h3>Sadie</h3>
+            <p>Breed: Dalmatian</p>
+            <p>Age: 4 years</p>
+            <button onclick="alert('Contact us to adopt Sadie!')">Adopt Sadie</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pet World. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

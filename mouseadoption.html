@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Adoption</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: goldenrod;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        
+        h1 {
+            text-align: center;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        
+        .mouse-card-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        .mouse-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mouse-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .mouse-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .mouse-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .mouse-card button {
+            background-color: goldenrod;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .mouse-card button:hover {
+            background-color: #e5b700;
+        }
+
+        
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Pet World</div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    
+    <h1>Meet Our Mice Available for Adoption</h1>
+
+    <div class="mouse-card-container">
+        
+        <div class="mouse-card">
+            <img src="Fancy Mouse.jpg" alt="Mickey the Mouse">
+            <h3>Mickey</h3>
+            <p>Breed: Fancy Mouse</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Mickey!')">Adopt Mickey</button>
+        </div>
+
+        <div class="mouse-card">
+            <img src="Dwarf Mouse.jpg" alt="Squeaky the Mouse">
+            <h3>Squeaky</h3>
+            <p>Breed: Dwarf Mouse</p>
+            <p>Age: 2 years</p>
+            <button onclick="alert('Contact us to adopt Squeaky!')">Adopt Squeaky</button>
+        </div>
+
+        <div class="mouse-card">
+            <img src="Albino Mouse.jpg" alt="Cheddar the Mouse">
+            <h3>Cheddar</h3>
+            <p>Breed: Albino Mouse</p>
+            <p>Age: 1.5 years</p>
+            <button onclick="alert('Contact us to adopt Cheddar!')">Adopt Cheddar</button>
+        </div>
+
+        <div class="mouse-card">
+            <img src="Spiny Mouse.jpg" alt="Whiskers the Mouse">
+            <h3>Whiskers</h3>
+            <p>Breed: Spiny Mouse</p>
+            <p>Age: 3 years</p>
+            <button onclick="alert('Contact us to adopt Whiskers!')">Adopt Whiskers</button>
+        </div>
+
+        <div class="mouse-card">
+            <img src="Satin Mouse.jpg" alt="Nibbles the Mouse">
+            <h3>Nibbles</h3>
+            <p>Breed: Satin Mouse</p>
+            <p>Age: 2.5 years</p>
+            <button onclick="alert('Contact us to adopt Nibbles!')">Adopt Nibbles</button>
+        </div>
+
+        <div class="mouse-card">
+            <img src="Hairless Mouse.jpg" alt="Pepper the Mouse">
+            <h3>Pepper</h3>
+            <p>Breed: Hairless Mouse</p>
+            <p>Age: 1 year</p>
+            <button onclick="alert('Contact us to adopt Pepper!')">Adopt Pepper</button>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Pet World. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
